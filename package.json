@@ -1,0 +1,25 @@
+{
+  "name": "post-injector",
+  "version": "1.0.0",
+  "description": "Inject posts into the reddit downloader gui",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proxtx/post-injector.git"
+  },
+  "author": "Proxtx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Proxtx/post-injector/issues"
+  },
+  "homepage": "https://github.com/Proxtx/post-injector#readme",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.5.3",
+    "@proxtx/material": "^1.1.3"
+  }
+}
