@@ -33,7 +33,10 @@ export const finishJob = async (pwd, jobId) => {
   let job = getJob(pwd, jobId);
   if (!job) return;
 
-  await fs.writeFile(job.path + "/info.json", JSON.stringify(job.data));
+  await fs.writeFile(
+    job.path + "/info.json",
+    JSON.stringify(job.data, null, 2)
+  );
 
   return;
 };

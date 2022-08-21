@@ -25,4 +25,6 @@ inject.addEventListener("click", async () => {
     await content.inputInstance.upload();
   }
   await jobManagement.finishJob(cookie.pwd, id);
+
+  location.pathname = location.pathname;
 });
