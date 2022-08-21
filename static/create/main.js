@@ -1,4 +1,4 @@
-import { imageSelectionList } from "./fileHandler.js";
+import { contentSelectionList } from "./fileHandler.js";
 
 const title = document.getElementById("title");
 const subreddit = document.getElementById("subreddit");

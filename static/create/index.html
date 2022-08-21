@@ -10,21 +10,28 @@
   </head>
   <body>
     <div class="box" id="mainBox">
-      <div id="imageBox">
-        <img id="mainImage" src="../lib/notSet.png" />
-        <div id="imageOptions">
+      <div id="contentBox">
+        <img id="mainImage" class="dataDisplay" src="../lib/notSet.png" />
+        <video
+          id="mainVideo"
+          class="dataDisplay hidden"
+          controls
+          autoplay
+          muted
+        ></video>
+        <div id="contentOptions">
           <input id="fileInput" type="file" class="hidden" />
           <m-button
             onclick="document.getElementById('fileInput').click()"
             stretch="true"
-            >Change Image</m-button
+            >Change Content</m-button
           >
           <m-button id="delete" stretch="true">Delete</m-button>
         </div>
       </div>
       <br />
-      <div id="imageSelectionBar">
-        <img src="../lib//plus.svg" id="addImageSelection" />
+      <div id="contentSelectionBar">
+        <img src="../lib//plus.svg" id="addContentSelection" />
       </div>
       <br />
       <m-text-input id="title" placeholder="Title"></m-text-input>
@@ -35,7 +42,7 @@
       <m-button id="inject">Inject</m-button>
     </div>
     <div class="hidden">
-      <div id="imageSelection" class="imageSelection"></div>
+      <div id="contentSelection" class="contentSelection"></div>
     </div>
     <script src="../lib/guiLoader.js" type="module"></script>
     <script src="main.js" type="module"></script>
