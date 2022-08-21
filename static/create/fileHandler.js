@@ -33,7 +33,6 @@ const createContentSelection = () => {
 
 fileInput.addEventListener("change", () => {
   if (activeContentSelection) activeContentSelection.inputInstance.activate();
-  activeContentSelection.inputInstance.upload();
 });
 
 deleteSelection.addEventListener("click", () => {
