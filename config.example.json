@@ -1,0 +1,5 @@
+{
+  "port": 3010,
+  "pwd": "1234",
+  "downloads": "../redditDownloader/downloads"
+}
