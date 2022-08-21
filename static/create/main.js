@@ -1,6 +1,8 @@
 import { contentSelectionList } from "./fileHandler.js";
 
 const jobManagement = await framework.load("jobManagement.js");
+const meta = await framework.load("meta.js");
+while (!(await meta.auth(cookie.pwd))) cookie.pwd = prompt("Password");
 
 const title = document.getElementById("title");
 const subreddit = document.getElementById("subreddit");
