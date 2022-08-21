@@ -22,7 +22,12 @@ inject.addEventListener("click", async () => {
   let id = await jobManagement.createJob(cookie.pwd, data);
   cookie.id = id;
   for (let content of contentSelectionList) {
-    await content.inputInstance.upload();
+    try {
+      await content.inputInstance.upload();
+    } catch {
+      alert("error");
+      return;
+    }
   }
   await jobManagement.finishJob(cookie.pwd, id);
 
