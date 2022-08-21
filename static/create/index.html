@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post-injector</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../lib/main.css" />
+  </head>
+  <body>
+    <div class="box" id="mainBox">
+      <div id="imageBox">
+        <img id="mainImage" src="../lib/notSet.png" />
+        <div id="imageOptions">
+          <input id="fileInput" type="file" class="hidden" />
+          <m-button
+            onclick="document.getElementById('fileInput').click()"
+            stretch="true"
+            >Change Image</m-button
+          >
+          <m-button id="delete" stretch="true">Delete</m-button>
+        </div>
+      </div>
+      <br />
+      <div id="imageSelectionBar">
+        <img src="../lib//plus.svg" id="addImageSelection" />
+      </div>
+      <br />
+      <m-text-input placeholder="Title"></m-text-input>
+      <m-text-input placeholder="Subreddit"></m-text-input>
+      <m-text-input placeholder="Author"></m-text-input>
+      <m-text-input placeholder="Link"></m-text-input>
+      <br />
+      <m-button>Inject</m-button>
+    </div>
+    <div class="hidden">
+      <div id="imageSelection" class="imageSelection"></div>
+    </div>
+    <script src="../lib/guiLoader.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

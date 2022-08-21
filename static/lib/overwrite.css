@@ -1,0 +1,16 @@
+:host {
+  --accentColor: #6320ee;
+  --accentColorText: #f8f0fb;
+  --backgroundColor: #211a1d;
+  --outline: #bebebe;
+  --greyText: var(--outline);
+  --grey: var(--outline);
+}
+
+input {
+  color: white;
+}
+
+div#wrap {
+  width: 100%;
+}

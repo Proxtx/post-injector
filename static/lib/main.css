@@ -1,0 +1,22 @@
+:root {
+  --accentColor: #6320ee;
+  --backgroundColor: #f8f0fb;
+  --boxColor: #211a1d;
+  --borderRadius: 7px;
+  --gap: 10px;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: var(--boxColor);
+  border-radius: var(--borderRadius);
+}
+
+.hidden {
+  display: none;
+}
