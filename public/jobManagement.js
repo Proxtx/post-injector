@@ -15,6 +15,7 @@ export const createJob = async (pwd, data) => {
 
   data.time = Date.now();
   data.downloads = [];
+  data.subreddit = data.subreddit.trim().toLowerCase();
 
   let job = {
     data,
