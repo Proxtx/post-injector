@@ -29,6 +29,7 @@ const createContentSelection = () => {
   });
 
   template.click();
+  reset();
 };
 
 fileInput.addEventListener("change", () => {
