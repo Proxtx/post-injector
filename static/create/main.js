@@ -8,10 +8,14 @@ const title = document.getElementById("title");
 const subreddit = document.getElementById("subreddit");
 const author = document.getElementById("author");
 const link = document.getElementById("link");
+const mainBox = document.getElementById("mainBox");
 
 const inject = document.getElementById("inject");
 
 inject.addEventListener("click", async () => {
+  mainBox.style.pointerEvents = "none";
+  mainBox.style.opacity = "0.8";
+
   let data = {
     title: title.component.value,
     subreddit: subreddit.component.value,
